@@ -6,7 +6,7 @@
 /*   By: uxmancis <uxmancis@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/14 17:10:04 by uxmancis          #+#    #+#             */
-/*   Updated: 2024/08/14 19:01:05 by uxmancis         ###   ########.fr       */
+/*   Updated: 2024/08/14 19:38:05 by uxmancis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,5 +37,5 @@
 */
 Zombie  *newZombie(std::string name)
 {
-    return (new Zombie(name));
+    return (new Zombie(name)); //Zombie constructor is used, which takes 'name' as parameter
 }

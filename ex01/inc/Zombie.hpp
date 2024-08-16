@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: uxmancis <uxmancis@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/14 12:08:23 by uxmancis          #+#    #+#             */
-/*   Updated: 2024/08/15 10:39:01 by uxmancis         ###   ########.fr       */
+/*   Created: 2024/08/14 19:09:17 by uxmancis          #+#    #+#             */
+/*   Updated: 2024/08/15 09:55:37 by uxmancis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,9 @@
 #define AQUAMARINE "\033[0;96m"
 #define RESET_COLOR "\033[0m"
 
-#include <stdio.h>
-
 /*C++ Standard Library is recommended in subject: https://en.cppreference.com/w/cpp/header*/
 #include <string> //std::string
-#include <iostream> //std::cout, std::endl
-
+#include <iostream> //std::endl
 
 /* Zombie Class definition 
 *
@@ -37,10 +34,13 @@ class Zombie
     
     public:
         Zombie(std::string name); //Constructor
+        Zombie(void);
         ~Zombie(void); //Destructor
         void announce(void); //Member function
+        void setName(std::string name);
 };
 
+Zombie* zombieHorde(int N, std::string name);
 Zombie  *newZombie(std::string name); //HEAP: creation and destruction manually handled
 void randomChump(std::string name); //STACK: creation and destruction automatically managed
 
