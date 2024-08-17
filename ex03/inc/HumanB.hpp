@@ -6,7 +6,7 @@
 /*   By: uxmancis <uxmancis@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/15 10:35:51 by uxmancis          #+#    #+#             */
-/*   Updated: 2024/08/15 14:09:58 by uxmancis         ###   ########.fr       */
+/*   Updated: 2024/08/17 12:56:33 by uxmancis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,12 @@
 # define HUMANB_HPP
 
 #include "Weapon.hpp"
+
+#define CYAN "\033[0;96m"
+#define GREEN "\033[0;92m"
+#define BLUE "\033[0;94m"
+#define RED "\033[0;31m"
+#define YELLOW "\033[0;93m"
 
 class HumanB
 {

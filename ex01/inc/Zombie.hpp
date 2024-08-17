@@ -6,7 +6,7 @@
 /*   By: uxmancis <uxmancis@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/14 19:09:17 by uxmancis          #+#    #+#             */
-/*   Updated: 2024/08/15 09:55:37 by uxmancis         ###   ########.fr       */
+/*   Updated: 2024/08/17 10:03:08 by uxmancis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ class Zombie
         Zombie(void);
         ~Zombie(void); //Destructor
         void announce(void); //Member function
-        void setName(std::string name);
+        void setName(std::string name); //Setter. As name's private,
 };
 
 Zombie* zombieHorde(int N, std::string name);

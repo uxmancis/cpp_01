@@ -6,7 +6,7 @@
 /*   By: uxmancis <uxmancis@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/14 19:07:45 by uxmancis          #+#    #+#             */
-/*   Updated: 2024/08/15 10:16:41 by uxmancis         ###   ########.fr       */
+/*   Updated: 2024/08/17 09:55:29 by uxmancis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void test (int test_nb, int number_of_zombies, Zombie *horde)
 
 	i = 0;
 	std::cout << "\n\n----------------- Test nb. " AQUAMARINE << test_nb << RESET_COLOR "-----------------" << std::endl; 
-	horde = zombieHorde(number_of_zombies, "yellow_teeth_zombie");
+	horde = zombieHorde(number_of_zombies, "z_Nerewis");
 	i = 0;
 	while (number_of_zombies > 0)
 	{
@@ -53,6 +53,7 @@ int main(void)
 *
 *	getter: function that makes a private attribute READABLE
 *	setter: function that makes a private attribute WRITEABLE
+*	//when attributes are private
 *
 *	C++ GETTERS & SETTERS explained easy: https://www.youtube.com/watch?v=5_GQw06deQg 
 */

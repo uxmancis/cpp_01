@@ -6,20 +6,20 @@
 #    By: uxmancis <uxmancis@student.42urduliz.co    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/08/14 12:09:45 by uxmancis          #+#    #+#              #
-#    Updated: 2024/08/17 10:05:41 by uxmancis         ###   ########.fr        #
+#    Updated: 2024/08/17 13:51:38 by uxmancis         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # Compiler and compiler flags
 CC = c++
-CFLAGS = -Wall -Wextra -Werror -std=c++98 -fsanitize=address -pedantic
+CFLAGS = -Wall -Wextra -Werror -std=c++98 -fsanitize=address
 
 # Source files and object files
-SRC = src/main.cpp src/Zombie.cpp src/zombieHorde.cpp
+SRC = src/main.cpp src/Harl.cpp
 OBJ = $(SRC:.cpp=.o)
 
 # Executable name
-NAME = zombieHorde
+NAME = cpp01_ex05
 
 # Make all rule
 all: $(NAME)

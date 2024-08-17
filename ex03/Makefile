@@ -6,7 +6,7 @@
 #    By: uxmancis <uxmancis@student.42urduliz.co    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/08/14 12:09:45 by uxmancis          #+#    #+#              #
-#    Updated: 2024/08/15 14:10:51 by uxmancis         ###   ########.fr        #
+#    Updated: 2024/08/16 18:11:58 by uxmancis         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ SRC = src/main.cpp src/HumanA.cpp src/HumanB.cpp src/Weapon.cpp
 OBJ = $(SRC:.cpp=.o)
 
 # Executable name
-NAME = zombie_ex03
+NAME = human_weapon_ex03
 
 # Make all rule
 all: $(NAME)

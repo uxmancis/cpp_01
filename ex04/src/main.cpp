@@ -6,7 +6,7 @@
 /*   By: uxmancis <uxmancis@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/15 14:12:25 by uxmancis          #+#    #+#             */
-/*   Updated: 2024/08/15 18:25:57 by uxmancis         ###   ########.fr       */
+/*   Updated: 2024/08/17 13:34:15 by uxmancis         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,10 @@ void ft_putmessage_intro(void)
     std::cout << "./cpp01_ex04 <" AQUAMARINE "filename" RESET_COLOR "> <"
                                     AQUAMARINE "str1" RESET_COLOR "> <"
                                     AQUAMARINE "str2" RESET_COLOR ">" << std::endl << std::endl;
+    std::cout << AQUAMARINE "filename" RESET_COLOR ": name of the file we'll use as input for the exercise" << std::endl;
+    std::cout << AQUAMARINE "str1" RESET_COLOR ": string we'll look for in specified file" << std::endl;
+    std::cout << AQUAMARINE "str2" RESET_COLOR ": any time str1 is found along specified file, it'll be replaced by str2" << std::endl;
+    
 }
 
 void ft_read_and_replace(std::string str1, std::string str2, std::ifstream& inFile)
@@ -95,11 +99,11 @@ void ft_read_and_replace(std::string str1, std::string str2, std::ifstream& inFi
 	outFile.close();
 }
 
-int ft_open_read_replace_lines(std::string str1, std::string str2)
+int ft_open_read_replace_lines(std::string str1, std::string str2, char **argv)
 {
     std::string filePath;
     
-    filePath = "example.txt";
+    filePath = argv[1];
     //Create an ifstream object to open the file
     std::ifstream inFile(filePath); //Create an input file stream object for reading data from a file
     //Check if the file was opened successfully
@@ -146,11 +150,10 @@ int main(int argc, char **argv)
     }
     //std::cout << "let's run the program! :)";
     str1 = argv[2];
-    std::cout << AQUAMARINE << "str 1 = "  << str1 << RESET_COLOR<< std::endl;
+    //std::cout << AQUAMARINE << "str 1 = "  << str1 << RESET_COLOR<< std::endl;
     str2 = argv[3];
-    std::cout << AQUAMARINE << "str 2 = "  << str2 << RESET_COLOR<< std::endl;
-
-    if (ft_open_read_replace_lines(str1, str2) == -1)
+    //std::cout << AQUAMARINE << "str 2 = "  << str2 << RESET_COLOR<< std::endl;
+    if (ft_open_read_replace_lines(str1, str2, argv) == -1)
         return (-1);
     
     return (0);
